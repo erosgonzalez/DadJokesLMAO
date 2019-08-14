@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jab-36-Zkl">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,68 +15,174 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dad_Jokes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YelloWhiteGradietn" translatesAutoresizingMaskIntoConstraints="NO" id="AJ7-9F-9vG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueGradient" translatesAutoresizingMaskIntoConstraints="NO" id="AJ7-9F-9vG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't push my..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2h-QH-bEQ">
-                                <rect key="frame" x="16" y="127" width="343" height="445"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="445" id="6IT-zP-RfU"/>
-                                    <constraint firstAttribute="width" constant="343" id="9AJ-qX-aCk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dad Joke LMAO 😂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8R-OL-lx2">
-                                <rect key="frame" x="69" y="90" width="237" height="29"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQe-It-aHE">
-                                <rect key="frame" x="133" y="580" width="109" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="Vzv-Jc-01y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQe-It-aHE">
+                                <rect key="frame" x="233" y="522" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrowGray"/>
                                 <connections>
                                     <action selector="onJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1n-Sz-F5i"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJF-Y3-qyM">
+                                <rect key="frame" x="145" y="45" width="85" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="logoFace"/>
+                                <connections>
+                                    <segue destination="gbM-Xd-zZZ" kind="push" id="xTh-7E-Nd8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEk-8C-RK3">
+                                <rect key="frame" x="29" y="522" width="125" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrowGray"/>
+                                <connections>
+                                    <action selector="onLastJoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shg-wz-jew"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Joke" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2h-QH-bEQ">
+                                <rect key="frame" x="17" y="194" width="342" height="278"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="kQe-It-aHE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="8Aj-hx-4Vu"/>
-                            <constraint firstItem="N8R-OL-lx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="GGG-PV-lFi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N8R-OL-lx2" secondAttribute="trailing" constant="69" id="I1V-80-nWv"/>
-                            <constraint firstItem="N8R-OL-lx2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="bjX-ar-2TQ"/>
-                            <constraint firstItem="kQe-It-aHE" firstAttribute="top" secondItem="S2h-QH-bEQ" secondAttribute="bottom" constant="8" id="lQh-zu-pqx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kQe-It-aHE" secondAttribute="trailing" constant="133" id="m25-BT-vc5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S2h-QH-bEQ" secondAttribute="bottom" constant="206" id="pwE-rX-971"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kQe-It-aHE" secondAttribute="bottom" constant="156" id="s5l-AN-o5B"/>
-                            <constraint firstItem="S2h-QH-bEQ" firstAttribute="top" secondItem="N8R-OL-lx2" secondAttribute="bottom" constant="8" id="uhI-2r-VSW"/>
-                            <constraint firstItem="S2h-QH-bEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wID-Yq-PNf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S2h-QH-bEQ" secondAttribute="trailing" constant="16" id="yQN-wp-cbG"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="KgG-ge-oTj"/>
                     <connections>
                         <outlet property="jokeButton" destination="kQe-It-aHE" id="mSM-tM-fNP"/>
                         <outlet property="jokeLabel" destination="S2h-QH-bEQ" id="KTZ-gC-Seu"/>
+                        <outlet property="lastJoke" destination="oEk-8C-RK3" id="oi8-kT-8oP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="130.88455772113943"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RPq-n1-27U">
+            <objects>
+                <viewController id="gbM-Xd-zZZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0j0-WX-tc9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueGradient" translatesAutoresizingMaskIntoConstraints="NO" id="GMu-8N-TWZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="To a special someone 💚" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-AW-vfD">
+                                <rect key="frame" x="50" y="165.5" width="276" height="23"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A gift from Hades" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj3-Xp-mrJ">
+                                <rect key="frame" x="80" y="129" width="214" height="23"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="28xp-pepefrog-articleLarge" translatesAutoresizingMaskIntoConstraints="NO" id="a87-dP-QAu">
+                                <rect key="frame" x="124" y="279.5" width="126" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="bAo-Ou-67S"/>
+                                    <constraint firstAttribute="width" constant="126" id="k3Z-XP-0aV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jj3-Xp-mrJ" firstAttribute="leading" secondItem="qx0-Ws-N3L" secondAttribute="leading" constant="80" id="71s-pF-4xC" customClass="NSLayoutHelper" customModule="Dad_Jokes" customModuleProvider="target">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="GMu-8N-TWZ" firstAttribute="trailing" secondItem="qx0-Ws-N3L" secondAttribute="trailing" id="DVc-hv-54V"/>
+                            <constraint firstAttribute="bottom" secondItem="GMu-8N-TWZ" secondAttribute="bottom" id="IvK-fU-y7l"/>
+                            <constraint firstItem="jj3-Xp-mrJ" firstAttribute="top" secondItem="qx0-Ws-N3L" secondAttribute="top" constant="65" id="Kcb-qK-uc4" customClass="NSLayoutHelper" customModule="Dad_Jokes" customModuleProvider="target"/>
+                            <constraint firstItem="a87-dP-QAu" firstAttribute="leading" secondItem="qx0-Ws-N3L" secondAttribute="leading" constant="124" id="PnF-hp-BOg"/>
+                            <constraint firstItem="Kz7-AW-vfD" firstAttribute="leading" secondItem="qx0-Ws-N3L" secondAttribute="leading" constant="50" id="ZQZ-BW-9Df"/>
+                            <constraint firstItem="qx0-Ws-N3L" firstAttribute="trailing" secondItem="a87-dP-QAu" secondAttribute="trailing" constant="125" id="ZRR-o3-PJu"/>
+                            <constraint firstItem="qx0-Ws-N3L" firstAttribute="trailing" secondItem="jj3-Xp-mrJ" secondAttribute="trailing" constant="81" id="e4l-MN-S25" customClass="NSLayoutHelper" customModule="Dad_Jokes" customModuleProvider="target">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                                        <real key="value" value="81"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="a87-dP-QAu" firstAttribute="top" secondItem="Kz7-AW-vfD" secondAttribute="bottom" constant="91.329999999999998" id="eiu-dP-goj"/>
+                            <constraint firstItem="qx0-Ws-N3L" firstAttribute="trailing" secondItem="Kz7-AW-vfD" secondAttribute="trailing" constant="49" id="kaQ-jg-Aw7"/>
+                            <constraint firstItem="GMu-8N-TWZ" firstAttribute="top" secondItem="0j0-WX-tc9" secondAttribute="top" id="mfC-Tu-pJ7"/>
+                            <constraint firstItem="Kz7-AW-vfD" firstAttribute="top" secondItem="jj3-Xp-mrJ" secondAttribute="bottom" constant="13.33" id="sMf-RU-Xiv"/>
+                            <constraint firstItem="GMu-8N-TWZ" firstAttribute="leading" secondItem="qx0-Ws-N3L" secondAttribute="leading" id="uJR-xu-8Ev"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qx0-Ws-N3L"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f3Q-78-6Dm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLy-Cs-Adj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914.4000000000001" y="130.78817733990149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jE3-SC-fLq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hkS-UW-VTH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="w80-AM-8i6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QIe-5G-YjJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gbM-Xd-zZZ" kind="relationship" relationship="rootViewController" id="OyO-tw-kqJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMq-xw-VEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2039.2" y="131.52709359605913"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JDH-Qw-KPr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jab-36-Zkl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mfw-yy-ayQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jhV-QV-QkJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cel-bd-m3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
         </scene>
     </scenes>
     <resources>
-        <image name="YelloWhiteGradietn" width="800" height="800"/>
+        <image name="28xp-pepefrog-articleLarge" width="600" height="600"/>
+        <image name="BlueGradient" width="800" height="800"/>
+        <image name="arrowGray" width="300" height="300"/>
+        <image name="logoFace" width="800" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xTh-7E-Nd8"/>
+    </inferredMetricsTieBreakers>
 </document>

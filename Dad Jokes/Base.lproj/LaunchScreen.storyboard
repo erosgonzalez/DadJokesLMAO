@@ -18,23 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YelloWhiteGradietn" translatesAutoresizingMaskIntoConstraints="NO" id="XDR-1o-rxd" userLabel="YelloWhiteGradient">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueGradient" translatesAutoresizingMaskIntoConstraints="NO" id="hh9-0d-pRX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoFace" translatesAutoresizingMaskIntoConstraints="NO" id="QIG-Ra-Wji">
-                                <rect key="frame" x="37" y="256" width="300" height="300"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="XDR-1o-rxd" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9ho-BR-jEp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QIG-Ra-Wji" secondAttribute="bottom" constant="222" id="Gqa-SL-2rm"/>
-                            <constraint firstItem="XDR-1o-rxd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="acG-xl-d0L"/>
-                            <constraint firstItem="QIG-Ra-Wji" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="212" id="fYm-fM-gZG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QIG-Ra-Wji" secondAttribute="trailing" constant="38" id="kwC-UD-MKv"/>
-                            <constraint firstItem="XDR-1o-rxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vLz-KR-tY3"/>
-                            <constraint firstAttribute="bottom" secondItem="XDR-1o-rxd" secondAttribute="bottom" id="wbd-bb-boF"/>
-                            <constraint firstItem="QIG-Ra-Wji" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="zDd-vp-mh4"/>
+                            <constraint firstItem="hh9-0d-pRX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6RY-dk-Nud"/>
+                            <constraint firstItem="hh9-0d-pRX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Aax-eE-NkH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QIG-Ra-Wji" secondAttribute="bottom" id="CYc-qS-cRn"/>
+                            <constraint firstItem="QIG-Ra-Wji" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jcu-gS-DPG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QIG-Ra-Wji" secondAttribute="trailing" id="Wxq-cw-B7m"/>
+                            <constraint firstItem="hh9-0d-pRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hSC-5c-0DO"/>
+                            <constraint firstAttribute="bottom" secondItem="hh9-0d-pRX" secondAttribute="bottom" id="pqu-mY-CEV"/>
+                            <constraint firstItem="QIG-Ra-Wji" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vTR-ry-fvo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -45,7 +45,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="YelloWhiteGradietn" width="800" height="800"/>
+        <image name="BlueGradient" width="800" height="800"/>
         <image name="logoFace" width="800" height="800"/>
     </resources>
 </document>

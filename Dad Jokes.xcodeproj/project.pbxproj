@@ -14,6 +14,8 @@
 		1D788A4B22948B2D00936DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D788A4922948B2D00936DDE /* LaunchScreen.storyboard */; };
 		1D788A5622948B2D00936DDE /* Dad_JokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D788A5522948B2D00936DDE /* Dad_JokesTests.swift */; };
 		1D788A6122948B2D00936DDE /* Dad_JokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D788A6022948B2D00936DDE /* Dad_JokesUITests.swift */; };
+		1DF06EF922FAA95400ED12FA /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06EF822FAA95400ED12FA /* NSLayoutHelper.swift */; };
+		1DF06EFB22FAA99300ED12FA /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF06EFA22FAA99300ED12FA /* DeviceHelper.swift */; };
 		6F2007D542CDDCA2DC59B3B5 /* Pods_Dad_JokesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE83AED1A14631BD7C572299 /* Pods_Dad_JokesTests.framework */; };
 		7BB1BD697B1D5F4E61708EFC /* Pods_Dad_Jokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7809EA7206F4D19E92B02B62 /* Pods_Dad_Jokes.framework */; };
 		B0041C34E927F9653019A395 /* Pods_Dad_JokesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B8FBDAC698582116280765 /* Pods_Dad_JokesUITests.framework */; };
@@ -50,6 +52,8 @@
 		1D788A5C22948B2D00936DDE /* Dad JokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dad JokesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D788A6022948B2D00936DDE /* Dad_JokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dad_JokesUITests.swift; sourceTree = "<group>"; };
 		1D788A6222948B2D00936DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF06EF822FAA95400ED12FA /* NSLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutHelper.swift; sourceTree = "<group>"; };
+		1DF06EFA22FAA99300ED12FA /* DeviceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
 		264FD1376B063CAEA32484BF /* Pods-Dad Jokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dad Jokes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dad Jokes/Pods-Dad Jokes.debug.xcconfig"; sourceTree = "<group>"; };
 		39B8FBDAC698582116280765 /* Pods_Dad_JokesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dad_JokesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75299176E5A3A887EB25F1E7 /* Pods-Dad JokesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dad JokesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dad JokesTests/Pods-Dad JokesTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				1D788A4422948B2C00936DDE /* Main.storyboard */,
 				1D788A4722948B2D00936DDE /* Assets.xcassets */,
 				1D788A4922948B2D00936DDE /* LaunchScreen.storyboard */,
+				1DF06EFA22FAA99300ED12FA /* DeviceHelper.swift */,
+				1DF06EF822FAA95400ED12FA /* NSLayoutHelper.swift */,
 				1D788A4C22948B2D00936DDE /* Info.plist */,
 			);
 			path = "Dad Jokes";
@@ -237,13 +243,16 @@
 				TargetAttributes = {
 					1D788A3C22948B2C00936DDE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 					1D788A5022948B2D00936DDE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 1D788A3C22948B2C00936DDE;
 					};
 					1D788A5B22948B2D00936DDE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 1D788A3C22948B2C00936DDE;
 					};
 				};
@@ -372,12 +381,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Dad Jokes/Pods-Dad Jokes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -392,7 +403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D788A4322948B2C00936DDE /* ViewController.swift in Sources */,
+				1DF06EFB22FAA99300ED12FA /* DeviceHelper.swift in Sources */,
 				1D788A4122948B2C00936DDE /* AppDelegate.swift in Sources */,
+				1DF06EF922FAA95400ED12FA /* NSLayoutHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,9 +588,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.WumboApps.Dad-Jokes";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dad-Jokes-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -594,9 +607,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.WumboApps.Dad-Jokes";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dad-Jokes-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -617,7 +630,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WumboApps.Dad-JokesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dad Jokes.app/Dad Jokes";
 			};
@@ -639,7 +652,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WumboApps.Dad-JokesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dad Jokes.app/Dad Jokes";
 			};
@@ -660,7 +673,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WumboApps.Dad-JokesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Dad Jokes";
 			};
@@ -681,7 +694,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.WumboApps.Dad-JokesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Dad Jokes";
 			};

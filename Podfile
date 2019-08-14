@@ -7,6 +7,7 @@ target 'Dad Jokes' do
 
   # Pods for Dad Jokes
   pod 'Alamofire'
+  pod "PromiseKit"
 
   target 'Dad JokesTests' do
     inherit! :search_paths
